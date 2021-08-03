@@ -1,0 +1,122 @@
+#weboldal {
+  width: 900px;
+  margin: auto;
+}
+
+nav {
+  background: #1a4fd6;
+  display: flex;
+  justify-content: center; 
+  font-weight: bold;
+}
+
+.menu {
+  margin-left: 20px;
+  margin-right: 20px; 
+  color: #d2d2d2;
+  font-family: 'Overpass', sans-serif;
+  font-size: 28px; 
+}
+
+a.menu {
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.sectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.pic {
+  font-family: 'Abril Fatface', cursive;
+  position: absolute;
+  top: 250px;
+  left: 45px;
+}  
+  
+img {
+  width: 384px;
+}
+
+#hi {
+  font-size: 28px;
+  color: #f1eeef;
+}
+
+#anakin {
+  font-size: 60px;
+  color: #f1eeef;
+  font-weight: bold;
+}
+
+.szoveg {
+  font-family: 'Overpass', sans-serif;
+  color: #222222;
+  padding: 20px 20px;
+}  
+
+.szoveg.alcim {
+  font-family: 'Merriweather', serif;
+  color: #222222;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.idezet {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 34px;
+  color: #d2d2d2;
+  background: #1a4fd6;
+  border: 1px solid #1a4fd6;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+
+blockquote {
+  width: 300px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+#bevezeto {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+blockquote::before {
+  content: '“';
+  position: absolute;
+  left: 2px;
+  top: -15px;
+  font-size: 80px;
+  }
