@@ -6,7 +6,7 @@ body {
 .slideshow-container {
     margin: auto;
     background: white;
-    max-width: 700px;
+    width: 700px;
     box-shadow: 1px 3px 5px 0 grey;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ p {
 }
 
 .thumbnails-container {
-    max-width: 700px;
+    width: 700px;
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -61,7 +61,7 @@ p {
 
 .thumbnails {
     width: 100px;
-    margin: 5px;
+    margin: 20px 5px 5px 5px;
     border: 3px solid white;
     box-shadow: 0 3px 5px grey;
 }
