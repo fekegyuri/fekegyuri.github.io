@@ -32,7 +32,7 @@ let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', gallery[currentPhoto].photo)
     $('#photo-title').text(gallery[currentPhoto].title)
     $('#photo-description').text(gallery[currentPhoto].description)
-    $('.thumbnails').css('border-color', 'grey')
+    $([currentPhoto]).css('border-color', 'grey')
 }
   
 loadPhoto(currentPhoto);
