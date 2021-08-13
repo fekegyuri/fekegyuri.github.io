@@ -83,3 +83,11 @@ p {
 .thumbnail:hover .thumbs-title {
   display: block;
 }
+
+.slideshow-element#left-arrow:hover {
+    opacity: 50%;
+}
+
+.slideshow-element#right-arrow:hover {
+    opacity: 50%;
+}

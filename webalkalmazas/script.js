@@ -32,7 +32,7 @@ let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', gallery[currentPhoto].photo)
     $('#photo-title').text(gallery[currentPhoto].title)
     $('#photo-description').text(gallery[currentPhoto].description)
-//    $('.thumbnails.currentPhoto').css('border-color', 'grey')
+    $('.thumbnails').css('border-color', 'grey')
 }
   
 loadPhoto(currentPhoto);
@@ -65,59 +65,3 @@ gallery.forEach((item, index) => {
         $('#photo-description').text(gallery[indexClicked].description);
     });
 });
-
-/*let thumbs = [
-    {
-    photo: 'thumbnails/windows_thumb_01.jpg',
-    title: 'Ablakok',
-    },
-    {
-    photo: 'thumbnails/windows_thumb_02.jpg',
-    title: 'Rózsaablak',
-    },
-    {
-    photo: 'thumbnails/windows_thumb_03.jpg',
-    title: 'Magasban',
-    },
-    {
-    photo: 'thumbnails/windows_thumb_04.jpg',
-    title: 'Szédülés',
-    },
-    {
-    photo: 'thumbnails/windows_thumb_05.jpg',
-    title: 'Padok',
-    }
-]
-for (let i = 0; i < thumbs.length; i++)  {
-            $('.thumbnails-container').append(`<div class="thumbnail">${thumbs[i].photo}</div>`)
-}
-thumbs.forEach((photo, index) => {
-  $('.thumbnails-container').append(`<div class="thumbnails" thumbs-index="${index}">${photo} (thumbs-index="${index}")</div>`);
-  });
-
-
- 
-thumbs.forEach((item, index) => {
-  $('.thumbnails').click((event) => {
-    let indexClicked = $(event.target).attr('thumbs-index');
-    let numberIndex = parseInt(indexClicked);
-    $('#clicked').text(thumbs[indexClicked]);
-  })
-
-    thumbs.forEach((thumb) => {
-    $('.thumbnails-container').attr('src', thumbs.photo);
-    $('.thumbnails-title').text(thumbs.title)
-})
-
-gallery.forEach ((photo)=> {
-    $('.thumbnails-container').attr('src', gallery.photo);
-
-})
-
-
-gallery.forEach(function (photo) {
-	$('.thumbnails-container').append(`<img class"thumbnails">`);
-	$('.thumbnails').attr('src', gallery.photo);
-})
-   */ 
-
