@@ -32,7 +32,7 @@ let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', gallery[currentPhoto].photo)
     $('#photo-title').text(gallery[currentPhoto].title)
     $('#photo-description').text(gallery[currentPhoto].description)
-// [currentPhoto]    $('#thumbnail').css('width', '120px')
+//    $('.thumbnails.currentPhoto').css('border-color', 'grey')
 }
   
 loadPhoto(currentPhoto);
@@ -56,7 +56,7 @@ $('#left-arrow').click(() => {
 }) 
 
 gallery.forEach((item, index) => {
-    $('.thumbnails-container').append(`<img src="${item.photo}" class="thumbnails" data-index="${index}">`);
+    $('.thumbnails-container').append(`<div class="thumbnail"><img src="${item.photo}" class="thumbnails" data-index="${index}"><div class="thumbs-title">${item.title}</div></div>`);
     $('.thumbnails').click((event) => {
         let indexClicked = $(event.target).attr('data-index');
         let numberIndex = parseInt(indexClicked);

@@ -54,7 +54,6 @@ p {
 .thumbnails-container {
     width: 700px;
     margin: auto;
-    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -64,4 +63,23 @@ p {
     margin: 20px 5px 5px 5px;
     border: 3px solid white;
     box-shadow: 0 3px 5px grey;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbs-title {
+  display: none;
+  position: relative;
+  background: rgb(68, 68, 68);
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  border-radius: 5px;
+  padding-left: 15px;
+  top: -110px;
+}
+
+.thumbnail:hover .thumbs-title {
+  display: block;
 }
